@@ -8,11 +8,16 @@
     "webRequest",
     "webRequestBlocking",
     "storage",
+    "unlimitedStorage",
     "<all_urls>"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
   ],
   "background": {
     "scripts": ["background.js"],
-    "persistent": false
+    "persistent": true
   },
   "content_scripts": [
     {
